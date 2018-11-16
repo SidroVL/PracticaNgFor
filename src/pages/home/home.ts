@@ -7,8 +7,11 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+title:string='Tour of Heroes';
+heroes:string[]=['Windstorm','Bombasto','Magneta','Tornado'];
+myHero:string='';
   constructor(public navCtrl: NavController) {
-
+    this.myHero=this.heroes[1];
   }
 
 }
